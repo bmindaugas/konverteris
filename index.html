@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="lt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="main.js"></script>
+    <title>Skaičiuotuvas</title>
+  </head>
+  <body>
+    <div class="eile">
+      <input type="number" name="kursas" id="kursas" class="eile" value="4.29"/>
+      <p class="eile">
+        <input type="number" name="zlotai" id="zlotai" class="eile" />
+      </p>
+      <p id="eu" class="eile"></p>
+
+      <script>
+        function skaiciuojam() {
+          var kursas = document.getElementById("kursas").value;
+          var zlotai = document.getElementById("zlotai").value;
+          var eurai = zlotai / kursas;
+          var eurai2 = eurai.toFixed(2);
+          document.getElementById("eu").innerHTML = eurai2;
+        }
+        zlotai.addEventListener("input", function(e) {
+          skaiciuojam();
+        });
+      </script>
+    </div>
+  </body>
+</html>

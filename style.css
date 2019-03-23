@@ -1,0 +1,14 @@
+.eile {
+    color: red;
+    display: inline-block;
+    
+}
+body{
+    text-align: center;
+    background-color: black;
+}
+input{
+    height: 20px;
+    width: 50px;
+    background-color: black;
+}
